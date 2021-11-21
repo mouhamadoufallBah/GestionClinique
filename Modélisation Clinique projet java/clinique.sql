@@ -3,8 +3,8 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le : Dim 24 oct. 2021 à 13:01
--- Version du serveur :  8.0.21
+-- Généré le : Dim 21 nov. 2021 à 00:26
+-- Version du serveur :  5.7.31
 -- Version de PHP : 7.3.21
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
@@ -24,62 +24,105 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Structure de la table `consultation`
+-- Structure de la table `dossiermedical`
 --
 
-DROP TABLE IF EXISTS `consultation`;
-CREATE TABLE IF NOT EXISTS `consultation` (
-  `tension` varchar(200) NOT NULL,
-  `temperature` varchar(200) NOT NULL,
-  `date` varchar(200) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+DROP TABLE IF EXISTS `dossiermedical`;
+CREATE TABLE IF NOT EXISTS `dossiermedical` (
+  `idM` int(11) NOT NULL AUTO_INCREMENT,
+  `contenue` text NOT NULL,
+  PRIMARY KEY (`idM`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
 --
--- Structure de la table `ordenance`
+-- Structure de la table `medicament`
 --
 
-DROP TABLE IF EXISTS `ordenance`;
-CREATE TABLE IF NOT EXISTS `ordenance` (
-  `codePrestation` int NOT NULL AUTO_INCREMENT,
-  `nomMedicament` varchar(200) NOT NULL,
-  `posologie` varchar(200) NOT NULL,
-  PRIMARY KEY (`codePrestation`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+DROP TABLE IF EXISTS `medicament`;
+CREATE TABLE IF NOT EXISTS `medicament` (
+  `codeM` int(11) NOT NULL AUTO_INCREMENT,
+  `nomM` varchar(255) NOT NULL,
+  `posologie` varchar(255) NOT NULL,
+  PRIMARY KEY (`codeM`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
 --
--- Structure de la table `prestation`
+-- Structure de la table `ordonance`
 --
 
-DROP TABLE IF EXISTS `prestation`;
-CREATE TABLE IF NOT EXISTS `prestation` (
-  `codePrestation` int NOT NULL AUTO_INCREMENT,
-  `nomPrestation` varchar(200) NOT NULL,
-  `date` varchar(200) NOT NULL,
-  PRIMARY KEY (`codePrestation`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+DROP TABLE IF EXISTS `ordonance`;
+CREATE TABLE IF NOT EXISTS `ordonance` (
+  `idO` int(11) NOT NULL AUTO_INCREMENT,
+  `code` int(11) DEFAULT NULL,
+  `codeM` int(11) DEFAULT NULL,
+  PRIMARY KEY (`idO`),
+  KEY `codeM` (`codeM`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
 --
--- Structure de la table `user`
+-- Structure de la table `rv`
 --
 
-DROP TABLE IF EXISTS `user`;
-CREATE TABLE IF NOT EXISTS `user` (
-  `code` int NOT NULL AUTO_INCREMENT,
-  `nom` varchar(200) NOT NULL,
-  `prenom` varchar(200) NOT NULL,
-  `login` varchar(200) NOT NULL,
-  `password` varchar(200) NOT NULL,
-  `role` varchar(200) NOT NULL,
-  `statut` varchar(200) DEFAULT NULL,
-  `antecedantMedicaux` varchar(200) DEFAULT NULL,
-  PRIMARY KEY (`code`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+DROP TABLE IF EXISTS `rv`;
+CREATE TABLE IF NOT EXISTS `rv` (
+  `idR` int(11) NOT NULL AUTO_INCREMENT,
+  `date` date NOT NULL,
+  `heure` time NOT NULL,
+  `libelleR` varchar(255) NOT NULL,
+  `temperature` double DEFAULT NULL,
+  `tension` double DEFAULT NULL,
+  `prestationAf` varchar(255) DEFAULT NULL,
+  `libelleP` varchar(255) DEFAULT NULL,
+  `idC` int(11) DEFAULT NULL,
+  `idP` int(11) DEFAULT NULL,
+  PRIMARY KEY (`idR`)
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+
+--
+-- Déchargement des données de la table `rv`
+--
+
+INSERT INTO `rv` (`idR`, `date`, `heure`, `libelleR`, `temperature`, `tension`, `prestationAf`, `libelleP`, `idC`, `idP`) VALUES
+(1, '2021-11-17', '16:30:00', 'Consultation', NULL, NULL, NULL, NULL, NULL, NULL);
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `users`
+--
+
+DROP TABLE IF EXISTS `users`;
+CREATE TABLE IF NOT EXISTS `users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `nom` varchar(255) DEFAULT NULL,
+  `prenom` varchar(255) DEFAULT NULL,
+  `login` varchar(255) DEFAULT NULL,
+  `pwd` varchar(255) DEFAULT NULL,
+  `role` enum('medecin,secretaire,responsableP,patient') DEFAULT NULL,
+  `codeP` int(11) DEFAULT NULL,
+  `antecedent` varchar(255) DEFAULT NULL,
+  `statu` varchar(255) DEFAULT NULL,
+  `idR` int(11) DEFAULT NULL,
+  `idO` int(11) DEFAULT NULL,
+  `codeRp` int(11) DEFAULT NULL,
+  `codeS` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `idR` (`idR`),
+  KEY `idO` (`idO`)
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+
+--
+-- Déchargement des données de la table `users`
+--
+
+INSERT INTO `users` (`id`, `nom`, `prenom`, `login`, `pwd`, `role`, `codeP`, `antecedent`, `statu`, `idR`, `idO`, `codeRp`, `codeS`) VALUES
+(1, 'ba', 'mouha', 'mouha.ba', '123', NULL, NULL, 'asthme', NULL, NULL, NULL, NULL, NULL);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
