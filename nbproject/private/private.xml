@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/mouha/OneDrive/Documents/NetBeansProjects/senCliniique/src/views/ListerConsultationMedecin.fxml</file>
+            <file>file:/C:/Users/mouha/OneDrive/Documents/NetBeansProjects/senCliniique/src/views/ListerRvMedecinController.java</file>
+            <file>file:/C:/Users/mouha/OneDrive/Documents/NetBeansProjects/senCliniique/src/views/DemandeRvController.java</file>
+            <file>file:/C:/Users/mouha/OneDrive/Documents/NetBeansProjects/senCliniique/src/views/AcceuilPatient.fxml</file>
+            <file>file:/C:/Users/mouha/OneDrive/Documents/NetBeansProjects/senCliniique/src/views/AnnulerRvController.java</file>
+            <file>file:/C:/Users/mouha/OneDrive/Documents/NetBeansProjects/senCliniique/src/views/VoirDetailPrestationRpController.java</file>
+            <file>file:/C:/Users/mouha/OneDrive/Documents/NetBeansProjects/senCliniique/src/views/AcceuilMedecinController.java</file>
+            <file>file:/C:/Users/mouha/OneDrive/Documents/NetBeansProjects/senCliniique/src/views/ListerPrestation.fxml</file>
+            <file>file:/C:/Users/mouha/OneDrive/Documents/NetBeansProjects/senCliniique/src/views/AcceuilSecretaire.fxml</file>
+            <file>file:/C:/Users/mouha/OneDrive/Documents/NetBeansProjects/senCliniique/src/views/DemandeRv.fxml</file>
+            <file>file:/C:/Users/mouha/OneDrive/Documents/NetBeansProjects/senCliniique/src/views/listerConsultation.fxml</file>
+            <file>file:/C:/Users/mouha/OneDrive/Documents/NetBeansProjects/senCliniique/src/views/FXMLDocument.fxml</file>
+            <file>file:/C:/Users/mouha/OneDrive/Documents/NetBeansProjects/senCliniique/src/views/ListerConsultationMedecinController.java</file>
+            <file>file:/C:/Users/mouha/OneDrive/Documents/NetBeansProjects/senCliniique/src/views/ValiderRv.fxml</file>
+            <file>file:/C:/Users/mouha/OneDrive/Documents/NetBeansProjects/senCliniique/src/views/ListerPrestationRp.fxml</file>
+            <file>file:/C:/Users/mouha/OneDrive/Documents/NetBeansProjects/senCliniique/src/views/VoirDetailPrestationRp.fxml</file>
+            <file>file:/C:/Users/mouha/OneDrive/Documents/NetBeansProjects/senCliniique/src/views/VoirDetailConsultationMedecin.fxml</file>
+            <file>file:/C:/Users/mouha/OneDrive/Documents/NetBeansProjects/senCliniique/src/views/AnnulerConsultationMedecin.fxml</file>
+            <file>file:/C:/Users/mouha/OneDrive/Documents/NetBeansProjects/senCliniique/src/views/ListerPrestationController.java</file>
+            <file>file:/C:/Users/mouha/OneDrive/Documents/NetBeansProjects/senCliniique/src/views/PlanifierRvMedecin.fxml</file>
+            <file>file:/C:/Users/mouha/OneDrive/Documents/NetBeansProjects/senCliniique/src/views/Connexion.fxml</file>
+            <file>file:/C:/Users/mouha/OneDrive/Documents/NetBeansProjects/senCliniique/src/views/AnnulerConsultationMedecinController.java</file>
+            <file>file:/C:/Users/mouha/OneDrive/Documents/NetBeansProjects/senCliniique/src/views/AnnulerPrestationRpController.java</file>
+            <file>file:/C:/Users/mouha/OneDrive/Documents/NetBeansProjects/senCliniique/src/views/AcceuilMedecin.fxml</file>
+            <file>file:/C:/Users/mouha/OneDrive/Documents/NetBeansProjects/senCliniique/src/views/ListerRv.fxml</file>
+            <file>file:/C:/Users/mouha/OneDrive/Documents/NetBeansProjects/senCliniique/src/views/AcceuilRpController.java</file>
+            <file>file:/C:/Users/mouha/OneDrive/Documents/NetBeansProjects/senCliniique/src/views/AcceuilSecretaireController.java</file>
+            <file>file:/C:/Users/mouha/OneDrive/Documents/NetBeansProjects/senCliniique/src/views/ListerRvMedecin.fxml</file>
+            <file>file:/C:/Users/mouha/OneDrive/Documents/NetBeansProjects/senCliniique/src/views/AnnulerPrestationRp.fxml</file>
+            <file>file:/C:/Users/mouha/OneDrive/Documents/NetBeansProjects/senCliniique/src/views/AcceuilRp.fxml</file>
+            <file>file:/C:/Users/mouha/OneDrive/Documents/NetBeansProjects/senCliniique/src/views/RechercherDossierMedicalMedecin.fxml</file>
+            <file>file:/C:/Users/mouha/OneDrive/Documents/NetBeansProjects/senCliniique/src/views/ListerConsultationController.java</file>
+            <file>file:/C:/Users/mouha/OneDrive/Documents/NetBeansProjects/senCliniique/src/views/AcceuilPatientController.java</file>
+            <file>file:/C:/Users/mouha/OneDrive/Documents/NetBeansProjects/senCliniique/src/views/AnnulerRv.fxml</file>
+            <file>file:/C:/Users/mouha/OneDrive/Documents/NetBeansProjects/senCliniique/src/views/ListerRvController.java</file>
+            <file>file:/C:/Users/mouha/OneDrive/Documents/NetBeansProjects/senCliniique/src/views/ConnexionController.java</file>
+            <file>file:/C:/Users/mouha/OneDrive/Documents/NetBeansProjects/senCliniique/src/views/RechercherDossierMedicalMedecinController.java</file>
+            <file>file:/C:/Users/mouha/OneDrive/Documents/NetBeansProjects/senCliniique/src/views/PlanifierRvMedecinController.java</file>
+            <file>file:/C:/Users/mouha/OneDrive/Documents/NetBeansProjects/senCliniique/src/views/ValiderRvController.java</file>
+            <file>file:/C:/Users/mouha/OneDrive/Documents/NetBeansProjects/senCliniique/src/views/ListerPrestationRpController.java</file>
+            <file>file:/C:/Users/mouha/OneDrive/Documents/NetBeansProjects/senCliniique/src/views/VoirDetailConsultationMedecinController.java</file>
+        </group>
+    </open-files>
+</project-private>
